@@ -14,6 +14,9 @@ camera.position.set(0, 0, 10);
 
 scene.add(camera);
 
+const helper = new THREE.CameraHelper( camera );
+scene.add( helper );
+
 const geometry = new THREE.BoxGeometry(1, 1, 1)
 
 const material = new THREE.MeshBasicMaterial({ color: 0xff0000 })
